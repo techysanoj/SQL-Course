@@ -19,3 +19,13 @@ create table employee(ID INT, NAME varchar(15), EXP INT);
 
 -- to get the tables strucutre
 describe employee;
+
+-- to create the table using another table (a kind of common table expression (CTE))
+create table emp as 
+select id, name from employee;
+
+-- to delete the table
+drop table emp;
+
+
+
