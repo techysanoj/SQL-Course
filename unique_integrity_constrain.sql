@@ -7,6 +7,10 @@ show tables;
 create table stu_2(stu_id int UNIQUE, stu_name varchar(15));
 
 create table stu_3(stu_id int, stu_name varchar(15), unique(stu_id)); -- here we have provided the constraint at column level
+-- here it means stu_id combinaton must be unique what if i have written
+create table stu_4(stu_id int, stu_name varchar(15), unique(stu_id, stu_name));
+-- it means combination of id and name must be unique
+-- like 1, sanoj is different than 1, deepak
 
 -- here stu_id must be unique
 
